@@ -1,0 +1,1 @@
+select rpad('*', rownum * 2, ' *') as line from dual connect by rownum <= 20; 

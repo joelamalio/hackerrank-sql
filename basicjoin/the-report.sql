@@ -1,0 +1,1 @@
+SELECT CASE WHEN Grades.Grade >= 8 THEN Students.Name ELSE null END, Grades.Grade, Students.Marks FROM Students INNER JOIN Grades ON Students.Marks >= Grades.Min_Mark AND Students.Marks <= Grades.Max_Mark ORDER BY Grades.Grade DESC, Students.Name ASC NULLS LAST;
